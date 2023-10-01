@@ -1,12 +1,22 @@
 # Дан список. Найдите сумму элементом с четными индексами
 
 # Да, понимаю что говнокод и мне не нравится, но работает.
+
+# def filter_odd_num(in_num):
+#     if(in_num.index() % 2) == 0:
+#         return True
+#     else:
+#         return False
+
 def even_sum(lst):
-    buffer = [] # Задали буффер обновления и при каждом цикле его обнуляем
-    for i in range(len(lst)):
-        if i % 2 == 0:
-            buffer.append(lst[i]) # Заполнили буфферный список только четными элементами
-            sum_list = sum(buffer) # Просуммировали
+    # buffer = [] # Задали буффер обновления и при каждом цикле его обнуляем
+    # for i in range(len(lst)):
+    #     if i % 2 == 0:
+    #         buffer.append(lst[i]) # Заполнили буфферный список только четными элементами
+    #         sum_list = sum(buffer) # Просуммировали
+    # sum_list = sum(filter(filter_odd_num, lst))
+    # print(sum_list)
+    sum_list = sum(filter(lambda x: x % 2 == 0, lst))
     return sum_list
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
