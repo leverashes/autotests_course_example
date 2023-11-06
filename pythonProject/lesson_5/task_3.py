@@ -49,9 +49,11 @@ def everything_for_your_cat(cats_data):
             boss_dict[new_cats_data[i][2]] = (a +'; ' + cats[i])
 
     # Выводим так как надо
-    our_str = '\n'.join([str(key) + ': ' + str(value) for key, value in boss_dict.items()])
-    print(our_str)
+    # our_str = '\n'.join([str(key) + ': ' + str(value) for key, value in boss_dict.items()])
+    # print(our_str)
 
+    our_str = f'{boss_dict}, \n'
+    print(our_str)
     return our_str # И хули?
 
 
